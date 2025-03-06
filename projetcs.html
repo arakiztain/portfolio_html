@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Films</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            padding: 0;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.9;
+        };
+
+        body::before {
+            content: "";
+            position: absolute;
+            top:0;
+            bottom:-55%;
+            left:0%;
+            right:0;
+            display: flex;
+            background-image: url('https://i.makeagif.com/media/1-12-2021/_CJCXa.gif');
+            background-size: cover;
+            opacity: 0.6;
+            z-index: -1;
+        }
+        
+        header {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 8px;
+            position: fixed;
+            top: 0;
+            width: 120%;
+            z-index: 2;
+            background-image: url("https://thumbs.dreamstime.com/b/vector-de-la-tira-pel%C3%ADculas-131457779.jpg");
+        }
+
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 10%;
+        }
+
+        .movie {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .movie:hover {
+            transform: scale(1.05);
+        }
+
+        .movie img {
+            width: 100%;
+            height: 500px;
+            object-fit: fill;
+        }
+
+        .movie-title {
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            background-color: #333;
+            color: white;
+        }
+
     
+        footer {
+            background-color: #483e3e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position:fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .nav-projects{
+            text-align: center;
+            padding-top: 0;
+        }
+        .nav-projects a{
+            text-decoration: none;
+            color: #000000;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 21px;
+        }
+
+     
+    </style>
+</head>
+
+<body>
+    <header>
+        <p><nav class="nav-projects">
+            <a id="home-title" href="index.html"><img src="">Home</a>
+        </nav></p>
+    </header>
+    <div class="movie-container">
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt1302006/" target="_blank"><img
+                    src="https://assets.scriptslug.com/live/img/x/posters/11110/the-irishman-2019_2731b11b11.jpg"
+                    alt="Película 1">
+                <div class="movie-title">The Irishman</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0099685/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_goodfellas"
+                target="_blank"><img src="https://pics.filmaffinity.com/Uno_de_los_nuestros-343032101-large.jpg"
+                    alt="Película 2">
+                <div class="movie-title">Goodfellas</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0075314/?ref_=fn_all_ttl_1" target="_blank"><img
+                    src="https://www.lavanguardia.com/peliculas-series/images/movie/poster/1976/2/w1280/9G26DnAeMbA4sp58Gi0Vze6eQv4.jpg"
+                    alt="Película 3"></a>
+            <div class="movie-title">Taxi Driver</div>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt1130884/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_shutter%2520island"
+                target="_blank"><img src="https://pics.filmaffinity.com/Shutter_Island-814462452-large.jpg"
+                    alt="Película 4">
+                <div class="movie-title">Shutter Island</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0112641/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_casino"
+                target="_blank"><img src="https://pics.filmaffinity.com/Casino-348445329-large.jpg" alt="Película 5">
+                <div class="movie-title">Casino</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0407887/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520departed"
+                target="_blank"><img
+                    src="https://play-lh.googleusercontent.com/yOtyaCoWJ2szPrVYTYpbCRAAI9Wov8kMADcxT0mW8wyoOHPYXFMghVwdoGAG1kxXIYBfJw"
+                    alt="Película 6"></a>
+            <div class="movie-title">The Departed</div>
+        </article>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
 </body>
+
 </html>
