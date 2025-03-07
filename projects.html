@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
+    <title>Films</title>
+</head>
+
+<body>
+    <header>
+        <p>
+        <nav class="nav-projects">
+            <a id="home-title" href="index.html"><img src="">Home</a>
+        </nav>
+        </p>
+    </header>
+    <div class="movie-container">
+        <article class="movie">
+           <!--  <p id="rating"></p> -->
+            <a href="https://www.imdb.com/title/tt1302006/" target="_blank"><img src="assets/the-irishman.jpg"
+                    alt="Película 1">
+                <div class="movie-title">The Irishman</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0099685/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_goodfellas"
+                target="_blank"><img src="assets/goodfellas.jpg" alt="Película 2">
+                <div class="movie-title">Goodfellas</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0075314/?ref_=fn_all_ttl_1" target="_blank"><img
+                    src="assets/taxi-driver.jpg" alt="Película 3"></a>
+            <div class="movie-title">Taxi Driver</div>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt1130884/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_shutter%2520island"
+                target="_blank"><img src="assets/shutter-island.jpg" alt="Película 4">
+                <div class="movie-title">Shutter Island</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0112641/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_casino"
+                target="_blank"><img src="assets/casino.jpg" alt="Película 5">
+                <div class="movie-title">Casino</div>
+            </a>
+        </article>
+
+        <article class="movie">
+            <a href="https://www.imdb.com/title/tt0407887/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520departed"
+                target="_blank"><img src="assets/the-departed.jpg" alt="Película 6"></a>
+            <div class="movie-title">The Departed</div>
+        </article>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+   <!--  <script>
+        const apiKey = '8b3516aa';
+
+        const movieTitle = "Goodfellas"; // Título de la película para buscar en la API
+
+        // Llamar a la función para obtener el rating de la película
+        fetchMovieRating(movieTitle);
+
+        // Función para obtener el rating de IMDb
+        function fetchMovieRating(title) {
+            const url = `https://www.omdbapi.com/?t=${title}&apikey=${apiKey}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.Response === "True") {
+                        // Mostrar la calificación en el <p id="rating">
+                        document.getElementById('rating').textContent = `Calificación IMDb: ${data.imdbRating || "No disponible"}`;
+                    } else {
+                        document.getElementById('rating').textContent = "Calificación IMDb: No disponible";
+                        alert('No se encontró la película.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Hubo un error al obtener los datos.');
+                });
+        }
+    </script> -->
+</body>
+
+</html>
